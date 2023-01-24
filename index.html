@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <h1>&bull; Datos Personales &bull;</h1>
+    <div class="underline">
+    </div>
+    <div class="icon_wrapper">
+    </div>
+    <form action="registro.php" method="post" id="contact_form">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="Nombres Completos" name="name" id="name_input" required>
+      </div>
+      <div class="email">
+        <label for="email"></label>
+        <input type="email" placeholder="Email" name="email" id="email_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="Numero Celular" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Genero" name="subject" id="subject_input" required>
+          <option disabled hidden selected>Seleccione el Genero</option>
+          <option>Femenino</option>
+          <option>Masculino</option>
+          <option>Le gustan las mujeres pero le encanta el bicho</option>
+        </select>
+      </div>
+      <div class="message">
+        <label for="message"></label>
+        <textarea name="message" placeholder="deja tu mensaje" id="message_input" cols="30" rows="5" required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Send Message" id="form_button" />
+      </div>
+    </form><!-- // End form -->
+  </div><!-- // End #container -->
+</body>
+</html>
